@@ -1,0 +1,70 @@
+body {
+  text-align: center;
+  color: #162D50;
+  font-weight: bold;
+  font-family: "Lato";
+  background: url("http://mediacompanies.com.mx/pattern.gif");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  height: 400px;
+  background: white;
+  width: 800px;
+  padding: 20px;
+}
+.wrapper:hover {
+  box-shadow: 0 10px 26px -6px rgba(0, 0, 128, 0.3);
+}
+
+span.one {
+  -webkit-animation: opacity 1.5s infinite 100ms;
+          animation: opacity 1.5s infinite 100ms;
+}
+
+span.two {
+  -webkit-animation: opacity 1.5s infinite 200ms;
+          animation: opacity 1.5s infinite 200ms;
+}
+
+span.three {
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation: opacity 1.5s infinite 300ms;
+          animation: opacity 1.5s infinite 300ms;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.logo {
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
+}
